@@ -9,14 +9,12 @@ import javax.sql.DataSource;
 @Configuration
 public class ConfigProject {
 
-
     @Bean
     public DataSource dataSource(){
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setUrl("jdbc:mysql://localhost/demo");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
-
         return dataSource;
     }
 
